@@ -9,8 +9,8 @@ const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
 
 const labels = {
   chromiumCrx: "Baixar CRX",
-  chromiumZip: "Baixar ZIP",
-  firefoxXpi: "Baixar XPI",
+  chromiumZip: "Baixar Vivaldi ZIP",
+  firefoxXpi: "Baixar Zen XPI",
   source: "Código-fonte",
 };
 
@@ -18,7 +18,7 @@ const browserNames = {
   chromium: "Chromium",
   chrome: "Chrome",
   edge: "Edge",
-  firefox: "Firefox",
+  firefox: "Firefox / Zen",
 };
 
 function formatDate(value) {

@@ -52,18 +52,18 @@
 
     <section id="como-usar" class="section grid-info">
       <article class="info-card">
-        <h3>Chromium / Chrome / Edge</h3>
-        <p>Baixe o arquivo <strong>.crx</strong> ou <strong>.zip</strong>. Para testes, normalmente use <code>chrome://extensions</code>, ative o modo desenvolvedor e carregue a pasta descompactada.</p>
-        <p class="muted">Auto-update externo usa <code>update_url</code> no <code>manifest.json</code> e arquivo XML HTTPS.</p>
+        <h3>Vivaldi / Chromium</h3>
+        <p>Baixe o <strong>Vivaldi ZIP</strong>, extraia e carregue a pasta da extensão em <code>vivaldi://extensions</code> com o modo desenvolvedor ativado.</p>
+        <p class="muted">Extensão carregada por pasta é melhor para teste. Auto-update real no Chromium exige pacote CRX assinado e <code>update_url</code>.</p>
       </article>
       <article class="info-card">
-        <h3>Firefox</h3>
-        <p>Baixe o <strong>.xpi</strong>. Para auto-update fora da AMO, a extensão precisa apontar para um manifesto JSON HTTPS no campo <code>browser_specific_settings.gecko.update_url</code>.</p>
-        <p class="muted">O XPI final precisa estar assinado para uso normal no Firefox.</p>
+        <h3>Zen Browser / Firefox</h3>
+        <p>Baixe o <strong>Zen XPI</strong>. Para teste, use a página de debug de extensões do Firefox/Zen e carregue o arquivo temporariamente.</p>
+        <p class="muted">Para instalação permanente e auto-update real, o XPI precisa estar assinado e apontar para o manifesto JSON HTTPS.</p>
       </article>
       <article class="info-card">
         <h3>Atualizações</h3>
-        <p>Quando lançar uma nova versão, suba o arquivo na aba Releases do GitHub, edite <code>data/extensions.json</code> e o workflow recria os manifests de update.</p>
+        <p>Quando lançar uma nova versão, troque os arquivos em <code>downloads/</code>, edite <code>data/extensions.json</code> e o workflow recria os manifests de update.</p>
       </article>
     </section>
   </main>

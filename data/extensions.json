@@ -1,35 +1,47 @@
 {
   "site": {
-    "title": "Minhas Extensões",
-    "heroTitle": "Baixe minhas extensões direto pelo navegador.",
-    "subtitle": "Catálogo grátis com GitHub Pages, downloads via GitHub Releases e suporte a manifests de atualização.",
-    "repositoryUrl": "https://github.com/SEU_USUARIO/SEU_REPOSITORIO"
+    "title": "ADeals",
+    "heroTitle": "Extensões do Akai para baixar direto pelo navegador.",
+    "subtitle": "Baixe versões para Vivaldi e Zen Browser, veja changelog e acompanhe atualizações.",
+    "repositoryUrl": "https://github.com/akaimxntis/ADeals"
   },
   "extensions": [
     {
-      "slug": "minha-extensao",
-      "name": "Minha Extensão",
-      "description": "Exemplo de card. Troque por uma descrição curta da sua extensão.",
+      "slug": "akai-avatar-routine",
+      "name": "Akai Avatar Routine",
+      "description": "Extensão para trocar avatar da Steam usando rotina, preview e modo direto. Versões separadas para Vivaldi/Chromium e Zen/Firefox.",
       "icon": "assets/icon.svg",
-      "version": "1.0.0",
+      "version": "2.1.2",
       "updated": "2026-05-28",
-      "browsers": ["chromium", "firefox"],
-      "tags": ["produtividade", "beta"],
+      "browsers": [
+        "chromium",
+        "firefox"
+      ],
+      "tags": [
+        "steam",
+        "avatar",
+        "rotina",
+        "vivaldi",
+        "zen"
+      ],
       "downloads": {
-        "chromiumCrx": "https://github.com/SEU_USUARIO/SEU_REPOSITORIO/releases/download/minha-extensao-v1.0.0/minha-extensao-1.0.0.crx",
-        "chromiumZip": "https://github.com/SEU_USUARIO/SEU_REPOSITORIO/releases/download/minha-extensao-v1.0.0/minha-extensao-1.0.0.zip",
-        "firefoxXpi": "https://github.com/SEU_USUARIO/SEU_REPOSITORIO/releases/download/minha-extensao-v1.0.0/minha-extensao-1.0.0.xpi",
-        "source": "https://github.com/SEU_USUARIO/SEU_REPOSITORIO"
+        "chromiumZip": "downloads/akai-avatar-routine-vivaldi-2.1.2.zip",
+        "firefoxXpi": "downloads/akai-avatar-routine-zen-firefox-2.1.2.xpi",
+        "source": "downloads/akai-avatar-routine-source-2.1.2.zip"
       },
       "update": {
-        "chromeId": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-        "chromeUpdateUrl": "https://SEU_USUARIO.github.io/SEU_REPOSITORIO/updates/chrome/minha-extensao.xml",
-        "firefoxAddonId": "minha-extensao@exemplo.com",
-        "firefoxUpdateUrl": "https://SEU_USUARIO.github.io/SEU_REPOSITORIO/updates/firefox/minha-extensao.json"
+        "firefoxAddonId": "akai-avatar-routine@akaimxntis.github.io",
+        "firefoxUpdateUrl": "https://akaimxntis.github.io/ADeals/updates/firefox/akai-avatar-routine.json"
+      },
+      "notes": {
+        "vivaldi": "Instale pelo modo desenvolvedor carregando a pasta extension_chromium extraída.",
+        "zen": "Instale como XPI/temporário pelo fluxo Firefox/Zen. Para uso permanente e auto-update real, o XPI precisa estar assinado."
       },
       "changelog": [
-        "Primeira versão publicada.",
-        "Downloads e manifests de update configurados."
+        "Versão 2.1.2 adicionada ao site.",
+        "Correção do reset de rotina/modo de envio.",
+        "Correção do preview automático.",
+        "Pacotes separados para Vivaldi/Chromium e Zen/Firefox."
       ]
     }
   ]
