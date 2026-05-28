@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Hub gratuito para baixar extensões do navegador e acompanhar atualizações." />
+  <title>Extension Hub</title>
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="topbar" aria-label="Menu principal">
+      <a class="brand" href="#top" aria-label="Página inicial">
+        <img src="assets/icon.svg" alt="" />
+        <span id="siteName">Extension Hub</span>
+      </a>
+      <div class="navlinks">
+        <a href="#extensoes">Extensões</a>
+        <a href="#como-usar">Como usar</a>
+        <a id="repoLink" href="#" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </nav>
+
+    <section id="top" class="hero-content">
+      <p class="eyebrow">downloads + updates self-host</p>
+      <h1 id="heroTitle">Minhas extensões em um lugar só.</h1>
+      <p id="heroSubtitle" class="hero-subtitle">Baixe, veja versões e copie URLs de atualização para Chromium e Firefox.</p>
+      <div class="hero-actions">
+        <a class="button primary" href="#extensoes">Ver extensões</a>
+        <a class="button ghost" href="#como-usar">Como instalar</a>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section id="extensoes" class="section">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">catálogo</p>
+          <h2>Extensões disponíveis</h2>
+        </div>
+        <label class="search-wrap">
+          <span>Pesquisar</span>
+          <input id="searchInput" type="search" placeholder="Nome, tag ou navegador..." autocomplete="off" />
+        </label>
+      </div>
+
+      <div id="cards" class="cards" aria-live="polite"></div>
+      <p id="emptyState" class="empty" hidden>Nenhuma extensão encontrada.</p>
+    </section>
+
+    <section id="como-usar" class="section grid-info">
+      <article class="info-card">
+        <h3>Chromium / Chrome / Edge</h3>
+        <p>Baixe o arquivo <strong>.crx</strong> ou <strong>.zip</strong>. Para testes, normalmente use <code>chrome://extensions</code>, ative o modo desenvolvedor e carregue a pasta descompactada.</p>
+        <p class="muted">Auto-update externo usa <code>update_url</code> no <code>manifest.json</code> e arquivo XML HTTPS.</p>
+      </article>
+      <article class="info-card">
+        <h3>Firefox</h3>
+        <p>Baixe o <strong>.xpi</strong>. Para auto-update fora da AMO, a extensão precisa apontar para um manifesto JSON HTTPS no campo <code>browser_specific_settings.gecko.update_url</code>.</p>
+        <p class="muted">O XPI final precisa estar assinado para uso normal no Firefox.</p>
+      </article>
+      <article class="info-card">
+        <h3>Atualizações</h3>
+        <p>Quando lançar uma nova versão, suba o arquivo na aba Releases do GitHub, edite <code>data/extensions.json</code> e o workflow recria os manifests de update.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Feito para GitHub Pages + GitHub Releases. Sem backend, sem Railway e sem custo fixo.</p>
+  </footer>
+
+  <template id="cardTemplate">
+    <article class="card">
+      <div class="card-top">
+        <img class="card-icon" alt="" />
+        <div>
+          <h3 class="card-title"></h3>
+          <p class="card-version"></p>
+        </div>
+      </div>
+      <p class="card-description"></p>
+      <div class="tags"></div>
+      <div class="downloads"></div>
+      <details class="updates-box">
+        <summary>URLs de atualização</summary>
+        <div class="update-list"></div>
+      </details>
+      <details class="changelog-box">
+        <summary>Changelog</summary>
+        <ul class="changelog"></ul>
+      </details>
+    </article>
+  </template>
+
+  <script src="assets/app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "name": "github-extension-hub",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "generate": "node scripts/generate-updates.mjs",
+    "check": "node scripts/generate-updates.mjs"
+  }
+}

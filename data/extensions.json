@@ -1,0 +1,36 @@
+{
+  "site": {
+    "title": "Minhas Extensões",
+    "heroTitle": "Baixe minhas extensões direto pelo navegador.",
+    "subtitle": "Catálogo grátis com GitHub Pages, downloads via GitHub Releases e suporte a manifests de atualização.",
+    "repositoryUrl": "https://github.com/SEU_USUARIO/SEU_REPOSITORIO"
+  },
+  "extensions": [
+    {
+      "slug": "minha-extensao",
+      "name": "Minha Extensão",
+      "description": "Exemplo de card. Troque por uma descrição curta da sua extensão.",
+      "icon": "assets/icon.svg",
+      "version": "1.0.0",
+      "updated": "2026-05-28",
+      "browsers": ["chromium", "firefox"],
+      "tags": ["produtividade", "beta"],
+      "downloads": {
+        "chromiumCrx": "https://github.com/SEU_USUARIO/SEU_REPOSITORIO/releases/download/minha-extensao-v1.0.0/minha-extensao-1.0.0.crx",
+        "chromiumZip": "https://github.com/SEU_USUARIO/SEU_REPOSITORIO/releases/download/minha-extensao-v1.0.0/minha-extensao-1.0.0.zip",
+        "firefoxXpi": "https://github.com/SEU_USUARIO/SEU_REPOSITORIO/releases/download/minha-extensao-v1.0.0/minha-extensao-1.0.0.xpi",
+        "source": "https://github.com/SEU_USUARIO/SEU_REPOSITORIO"
+      },
+      "update": {
+        "chromeId": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "chromeUpdateUrl": "https://SEU_USUARIO.github.io/SEU_REPOSITORIO/updates/chrome/minha-extensao.xml",
+        "firefoxAddonId": "minha-extensao@exemplo.com",
+        "firefoxUpdateUrl": "https://SEU_USUARIO.github.io/SEU_REPOSITORIO/updates/firefox/minha-extensao.json"
+      },
+      "changelog": [
+        "Primeira versão publicada.",
+        "Downloads e manifests de update configurados."
+      ]
+    }
+  ]
+}

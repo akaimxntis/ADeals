@@ -1,0 +1,12 @@
+{
+  "addons": {
+    "minha-extensao@exemplo.com": {
+      "updates": [
+        {
+          "version": "1.0.0",
+          "update_link": "https://github.com/SEU_USUARIO/SEU_REPOSITORIO/releases/download/minha-extensao-v1.0.0/minha-extensao-1.0.0.xpi"
+        }
+      ]
+    }
+  }
+}
